@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #000000;
+    color: #f6f6f6;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    
+}
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho_menu_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22d4fd;
+    text-decoration: none;
+}
+.container {
+    padding: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.container_conteudo_titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+.destaques-titulo {
+    color: #22d4fd;
+}
+.container_conteudo_subtitulo {
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+}
+.destaques{
+    color: #f6f6f6;
+}
+.container_conteudo_paragrafo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+
+.container_buttons_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400; /*peso da font*/
+    font-size: 24px;
+}
+.container_conteudo_subtitulo2{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400; /*peso da font*/
+    font-size: 20px;
+}
+.container_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+.container_buttons_button {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border: 2px solid #22d4fd;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_buttons_button:hover {
+    background-color: #f6f6f6;
+    color: #22d4fd;
+    padding: 3%;
+
+}
+
+.imgPrincipal{
+    height: 400px;
+    border-radius: 10px;
+}
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22d4fd;  
+    text-align: center;  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
