@@ -1,0 +1,341 @@
+
+/* MENU */
+.nav-bar {
+    padding: 0 3em;
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-bar__item {
+    text-decoration: none;
+}
+
+.nav-bar__item a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--preto);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.nav-bar__item a:hover {
+    color: var(--branco);
+    border: 2px solid var(--branco);
+    padding: .2em;
+}
+
+.nav-bar__link {
+    list-style: none;
+    display: inline; 
+    align-items: center;
+    padding: 2em;
+}
+
+ /* Home */
+.conteudo__banner {
+    width: 100%;
+}
+
+.conteudo__subtitulo {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.conteudo__principal {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    
+}
+
+.conteudo__principal-utensilios {
+    width: 150px;
+    padding: 0 2em;
+}
+
+.conteudo__texto {
+    font-size: 1.2em;
+    margin: 1em 0em;
+}
+
+.conteudo__principal strong {
+    font-weight: bold;
+}
+.conteudo__principal em {
+    font-style: italic;
+}
+
+.conteudo-secundario {
+    align-items: center;
+}
+
+.conteudo__link {
+    font-style: italic;
+}
+.conteudo__link::before {
+    content: "🌟";
+}
+
+.conteudo__secundario-img {
+    width: 35vw;
+    height: 25em;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: .8em .8em .5em var(--preto);
+    
+}
+.conteudo__secundario-img:hover {
+    opacity: .5;
+}
+
+.conteudo__lista{
+    width: 50vw;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+}
+.conteudo__link {
+    padding: 1em;
+    list-style: none;
+}
+.conteudo-mapa {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.conteudo-secundario__video{
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo__secundario-beneficios {
+    display: flex;
+    justify-content: center;
+}
+
+/* PRODUTOS */
+
+.conteudo {
+    background-color: var(--branco);
+}
+.conteudo-produtos {
+   padding: 3em;
+}
+
+.conteudo-produtos__lista {
+    display: flex;
+    justify-content:center;
+    gap: 5em;
+    padding: .5em;
+      
+}
+
+.conteudo-produtos__lista li:hover {
+    border-color: var(--cinza);
+}
+
+.conteudo-produtos__lista li:hover h2 {
+    font-size: 2.5em;
+}
+
+.conteudo-produtos__link {
+    list-style: none;
+    text-align: center;
+    width: 20vw;
+    border: 2px solid var(--preto);
+    border-radius: 1em;
+}
+
+.conteudo-produtos__subtitulo {
+    font-size: 2em;
+    font-weight: bold;
+    
+}
+
+.conteudo-produtos__descricao{
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+.conteudo-produtos__preco {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.rodape {
+    text-align: center;
+    color: var(--branco);
+    background: url("/img/bg.jpg");    
+    padding: 2em;
+
+}
+
+
+/* contato */
+.conteudo-contato {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    font-size: 20px;
+
+}
+.conteudo-contato__formulario-preenchimento {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+
+.conteudo-contato__formulario-input{
+    width: 33vw;
+    height: 3em;
+}
+
+.conteudo-contato__formulario-click {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em;
+    margin-bottom: 1em;
+}
+
+.conteudo-contato__formulario-click__input {
+    margin: .5em;
+
+}
+
+fieldset {
+    margin: 1em 0em;
+    border: none;
+}
+.opcao {
+    margin-top: 1em;
+    padding: .5em 1em;
+    
+}
+.enviar{
+    margin-top: 1em;
+    width: 25vw;
+    padding: 1.25em 0;
+    background: var(--preto);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: var(--cinza);
+    transform: scale(1.1);
+}
+
+.conteudo-informacao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.conteudo-informacao__cabecalho{
+    background-color: var(--cinza);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+td,th {
+    margin: none;
+    border: 1px solid var(--preto);
+    padding: .5em 1em;
+}
+table {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* MENU */
+
+    .nav-bar{
+       flex-direction: column;
+    }
+
+    .nav-bar__item{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .nav-bar__link {
+        padding: 0.4em;
+        margin-bottom: 1em;
+    }
+    
+
+    /* Home */
+    .conteudo__subtitulo {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    .conteudo__principal {
+        flex-direction: column;
+        align-items: center;        
+    }
+    .conteudo__texto {
+        font-size: 1em;
+    }
+
+    .conteudo-mapa {
+        text-align: center;      
+    }
+
+    .conteudo-mapa__mapa {
+        width: 80vw;
+        height: 15em;
+    }
+
+    .conteudo__secundario-beneficios {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .conteudo__link {
+        font-size: .8em;
+    }
+
+    .conteudo__secundario-img {
+        height: 15em;
+        width: 50vw;
+    }
+
+    .rodape{
+        height: 18em;
+    }
+
+    /* Produtos */
+    .conteudo-produtos__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-produtos__link {
+        width: 80vw;
+    }
+
+    /* Contato */
+
+    .conteudo-contato__formulario-input {
+        width: 80vw;
+    }
+
+    .enviar {
+        width: 50vw;
+    }
+
+
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <h1> <img src="img/logo.png" alt="Logo da barbearia alura"></h1>
+        <nav>
+            <ul class="nav-bar__item">
+                <li class="nav-bar__link"> <a href="index.html">Home</a></li>
+                <li class="nav-bar__link"> <a href="produtos.html">Produtos</a></li>
+                <li class="nav-bar__link"> <a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-contato">
+
+            <form class="conteudo-contato__formularios">
+
+                <fieldset class="conteudo-contato__formulario-preenchimento">
+                    <label for="nomesobrenome">Nome e Sobrenome:</label>
+                    <input type="text" id="nomesobrenome" class="conteudo-contato__formulario-input" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="conteudo-contato__formulario-input" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" class="conteudo-contato__formulario-input" required placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="conteudo-contato__formulario-input" id="mensagem" cols="30" rows="15" required></textarea>
+                </fieldset>
+                
+                <fieldset class="conteudo-contato__formulario-click" >
+                    <legend>Como prefere nosso contato?</legend>   
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" class="conteudo-contato__formulario-click__input">Email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" class="conteudo-contato__formulario-click__input" >Telefone</label>
+                
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" class="conteudo-contato__formulario-click__input">WhatsApp</label>
+            
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horario prefere ser atendido?</legend>
+                    <select name="Contato" class="opcao">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset  class="conteudo-contato__formulario-click">    
+                    <label> <input type="checkbox" class="conteudo-contato__formulario-click__input" checked> Gostaria de receber nossas novidades por email?</label>
+                    <input type="submit" name="contato" value="Enviar formulário" class="enviar">
+                </fieldset>
+
+            </form>
+        
+        </section>
+
+        <section class="conteudo-informacao">
+            <table class="conteudo-informacao__tabela">
+                <thead class="conteudo-informacao__cabecalho">
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h as 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>8h as 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h as 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quita</td>
+                        <td>8h as 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h as 20h</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img src="img/logo-branco.png" alt="">
+        <p>&copy;Copyright Barbearia Alura - 2019</p>
+    </footer>
+
+</body>
+</html>

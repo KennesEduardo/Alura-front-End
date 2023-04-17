@@ -1,0 +1,18 @@
+:root {
+    --cinza:#CCCCCC;
+    --vermelho:#FF0000;
+    --branco:#FFFFFF;
+    --preto:#000000;
+    --cinza-escuro:#5d5d61;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(var(--cinza), var(--cinza-escuro)) ;
+}
